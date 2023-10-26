@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/*=======Scrollbar=======*/
+::-webkit-scrollbar{
+	width: 10px;
+	background: #979797;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #575757;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #1b1b1b;
+}
+
+body{
+	font-family: "Raleway", sans-serif;
+}
+
+/* Style the navigation bar links */
+.nav-items a {
+    color: black; /* Set the default color to black */
+    font-size: medium;
+    font-weight: 500;
+    transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+/* Style for the links on hover (blinking effect) */
+.nav-items a:hover {
+    color: white; /* Change the color to white on hover */
+    animation: blink 1s infinite; /* Add the blinking animation */
+}
+
+/* Define the blinking animation */
+@keyframes blink {
+    0% {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    z-index: 99999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    transition: .6s ease;
+}
+
+header.sticky{
+    background: rgb(255, 255, 128);
+	box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.nav-bar{
+
+    position: relative;
+    height: calc(4rem + 1rem);
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    transition: .6s ease;
+    
+}
+
+header.sticky .nav-bar{
+    height: calc(2.5rem + 1rem);
+}
+
+.nav-items a{
+    color: rgb(59, 59, 59);
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+.nav-items a:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-items a:hover{
+    color: #1b1b1b;
+}
+
+.nav-bar .logo{
+    width: 150px;
+}
+
+.nav-bar .logo img{
+    width: 100%;
+}
+
+/* Style the submit button to look like clickable text */
+.top-right-form input[type="submit"] {
+	margin-right: 30px;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(59, 59, 59);
+    text-decoration: none; /* You can change the color to your preference */
+}
+.top-right-form input[type="submit"]:hover{
+    color: #1b1b1b;
+}
+
+/* Remove the default button outline on focus */
+.top-right-form input[type="submit"]:focus {
+    outline: none;
+}
+
+
+	    table {
+	        border-collapse: collapse;
+	        width: 100%;
+	    }
+	
+	    th, td {
+	        text-align: left;
+	        padding: 8px;
+	    }
+	
+	    tr:nth-child(even){background-color: #f2f2f2}
+	
+	    th {
+	        background-color:rgb(59, 59, 59);
+	        color: white;
+	    }
+	    .smallbtn {
+	            background-color: #4CAF50; 
+	            color: white;
+	            padding: 8px 12px;
+	            text-align: center;
+	            text-decoration: none;
+	            display: inline-block;
+	            border: none;
+	            border-radius: 4px;
+	            cursor: pointer;
+	        }
+	
+	        .smallbtn:hover {
+	            background-color: #45a049; 
+	        }
